@@ -69,12 +69,12 @@
     border: 1px solid #000;
     text-align: center;
 }
-.msg.error{
+.error{
     color: #842029;
     background-color: #F8D7Da;
     border-color: #F5C2C7;
 }
-.msg.sucess{
+.success{
     color: #0F5132;
     background-color: #D1E7DD;
     border-color: #BADBCC;
@@ -127,10 +127,38 @@
 
 
 
+/* Edit profile */
+
+#profile-image-container{
+  width: 150px;
+  height: 150px;
+  border: 6px solid #F5C518;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto;
+}
+
+.page-description{
+  color: #999;
+}
+
+#bio{
+  max-width: 400px;
+}
+.disabled{
+  background-color: #BBB;
+}
+
+#change-password-container{
+  margin-top: 30px;
+}
 
 
-
-
+.edit-profile-page .card-btn{
+  width: auto;
+  margin-top: 10px;
+}
 
 
 
