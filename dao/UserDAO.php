@@ -126,6 +126,21 @@
 
         }
         public function findById($id){
+            if($id != ""){
+                $sel = $this->conn->prepare("SELECT * FROM users WHERE id=:PId");
+                $sel->execute(array(":PId" => $id));
+                if($sel->rowCount()>0){
+                    $data = $sel->fetch();
+                    $user = $this->buildUser($data);
+
+                    return $user;
+                } else {
+                    return false;
+                }
+                
+            } else {
+                return false;
+            }
 
         }
         public function findByToken($token){
